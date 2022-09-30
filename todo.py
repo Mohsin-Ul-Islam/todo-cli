@@ -60,7 +60,7 @@ def remove_todo(idx: int) -> None:
 
     todo = todos.pop(idx - 1)
     save(todos)
-    print(f"removed: {todo}\n")
+    print(f"removed: {todo['description']}\n")
 
 
 def complete_todo(idx: int) -> None:
